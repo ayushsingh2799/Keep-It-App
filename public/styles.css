@@ -1,0 +1,63 @@
+ /* font-family: 'McLaren', cursive;
+font-family : 'Montserrat', sans-serif; */
+
+*{
+    padding:0;
+    margin: 0;
+    font-family:'Montserrat',sans-serif;
+}
+.note{
+    /* height:200px; */
+    width:300px;
+    /* border-style:solid; for making boder-color we have to define the style of border such as solid or dotted other wise it will remain
+    same and colr won't be allowed
+    border-color:black;  */
+
+
+   display:inline-block;
+
+/* 
+   /* Since div's by default are block elements - meaning they will occupy full available width, try using -
+
+display:inline-block;
+The div is now rendered inline i.e. does not disrupt flow of elements, but will still be treated as a block element. */
+
+
+
+   margin-top:30px;
+   margin-left:20px;
+   border-radius:10px;
+   padding:50px;
+   box-shadow: 0 0 10px 0  rgba(0,0,0,0.3);
+   background-color:#fff;
+}
+
+header{
+    height:100px;
+    /* width: 100%; */
+    background-color:#f5ba13;
+   padding-top: 20px;
+   padding-left: 30px;
+   box-shadow: 0 0 10px 0  rgba(0,0,0,0.3);
+}
+
+footer{
+    text-align:center;
+
+    /* margin-bottom: 0;
+    margin-top:100%; */
+    font-family : 'Montserrat', sans-serif;
+    position: absolute;
+    bottom:0;
+    height:7px;
+    width:100%;
+}
+
+body{
+   background-color:#eee;
+   
+}
+
+
+
+
