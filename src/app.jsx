@@ -1,24 +1,36 @@
-import React from "react";
+import React,{useState}from "react";
 import Reactdom from "react-dom";
 import Header from "./header.jsx";
 import Footer from "./footer.jsx";
 import Note from "./note.jsx";
-import notes from "./notes.js";
+import Textarea from "./textarea.jsx";
 
-// function createNote(notes)
-// {
-//     return (
-//         <Note key={notes.key} title={notes.title}  content={notes.content}/>
-//     );
-// }
 
-// notes.map(createNote)  this is also one of the method of working with map function where we are calling the create  function seperately
 function App()
 {
+
+    const [notes,setNotes]=useState([]);
+    function addNote(note)
+    {
+         setNotes(prevValue=>{
+             return([...prevValue,note]);
+         })
+    }
+    function removeNote(id)
+    {
+        setNotes(prevValue=>{
+            return prevValue.filter((notes,index)=>{         //catch the filter functioning if you can.
+                return (index!==id);
+            });
+        });
+    }
     return(
         <div>
             <Header />
-              {notes.map(notes=><Note key={notes.key} title={notes.title}  content={notes.content}/>)}
+            <Textarea addingnote={addNote}/>
+            { notes.map((item,index)=>{
+              return<Note key={index} id={index} title={item.title} content={item.content} removingnote={removeNote}/>;
+            })}
             <Footer />
         </div>
     )
