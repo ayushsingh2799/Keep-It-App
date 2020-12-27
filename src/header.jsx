@@ -7,7 +7,7 @@ function Header()
 {
     return(
         <header>
-               <h1 style={styleHeading}>Keeper</h1>
+               <h1 style={styleHeading}>Keep-It!</h1>
         </header>
     );
 };

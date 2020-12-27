@@ -19,15 +19,18 @@ font-family : 'Montserrat', sans-serif; */
    background-color:#fff;
 }
 .note button{
-      font-size:1.2rem;
+      position:absolute;
+      right:4px;
+      bottom:-12px;
+      height:36px;
+      width:36px;
+      font-size:2rem;
       background-color:#f5ba13;
+      border-radius:50%;
       border:none;
       outline:none;
       color:white;
-      padding:5px;
-      position:absolute;
-      right:0px;
-      bottom:0px;
+      cursor:pointer;
 }
 .note h1{
    word-wrap:break-word;
@@ -59,6 +62,21 @@ font-family : 'Montserrat', sans-serif; */
    margin-bottom: 10px;
    resize: none;
    font-size:1.2rem;
+   word-wrap:break-word;
+}
+.text-area button{
+   position:absolute;
+   bottom:-15px;
+   right:4px;
+   width:40px;
+   height:40px;
+   background-color: #f5ba13;
+   color:white;
+   border:none;
+   outline:none;
+   border-radius:50%;
+   font-size:2rem;
+   cursor:pointer;
 }
 
 header{
