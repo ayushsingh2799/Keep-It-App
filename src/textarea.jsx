@@ -16,6 +16,7 @@ function Textarea(props)
     {
             props.addingnote(text);
             event.preventDefault();
+            setText({title:"",content:""});
     }
 
     return(<div class="text-area">

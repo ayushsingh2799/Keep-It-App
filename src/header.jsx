@@ -1,4 +1,6 @@
 import React from "react";
+import AssignmentIcon from '@material-ui/icons/Assignment';
+
 
 let styleHeading ={
     fontFamily:"McLaren"
@@ -7,7 +9,7 @@ function Header()
 {
     return(
         <header>
-               <h1 style={styleHeading}>Keep-It!</h1>
+               <h1 style={styleHeading}><AssignmentIcon /> Keep-It!</h1>
         </header>
     );
 };

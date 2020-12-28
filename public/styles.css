@@ -6,6 +6,12 @@ font-family : 'Montserrat', sans-serif; */
     margin: 0;
     font-family:'Montserrat',sans-serif;
 }
+body{
+   background-color: #ccc7a3;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
 
 .note{
    position:relative;
